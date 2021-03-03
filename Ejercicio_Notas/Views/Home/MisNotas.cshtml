@@ -1,0 +1,26 @@
+
+@{
+    ViewData["Title"] = "Mis Notas";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Mis notas</h1>
+
+    <table>
+        <thead>   
+            <tr> 
+                <th>Titulo Nota</th> 
+                <th>Texto</th>
+
+                
+            </tr> 
+         </thead> 
+            @foreach(var nota in ViewBag.MisNotas) 
+                {    
+                <tr>  
+                    <td>@nota.Titulo</td> 
+                    <td>@nota.Cuerpo</td> 
+                </tr>   
+                }
+    </table> 
+</div>

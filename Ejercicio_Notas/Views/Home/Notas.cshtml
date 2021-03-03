@@ -1,0 +1,17 @@
+
+        <h2>Nueva Nota</h2>
+        
+        <form method="POST" action="@Url.Action("GuardarNota", "Home")">
+            <div class="form-group">
+                <label for="titulo">Titulo</label>
+                <input type="text" class="form-control" name="Titulo">
+            </div>
+
+            <div class="form-group">
+                <label for="cuerpo">Cuerpo de la nota</label>
+                <textarea class="form-control" name="Cuerpo" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Guardar</button>
+
+            <a class="btn btn-dark" asp-area="" asp-controller="Home" asp-action="MisNotas">Ver Mis Notas</a>
+        </form>
